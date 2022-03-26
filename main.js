@@ -25,7 +25,7 @@ function dynamic(randomArr) {
             dynamic(randomArr)
         }, 80);
     } else {
-        setTimeout(resetTyping, 3000);
+        setTimeout(resetTyping, 1500);
     }
 }
 dynamic(randomString())
