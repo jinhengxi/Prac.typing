@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: darkslateblue;;
+}
+.wrap{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.material-icons{
+    font-size: 10rem;
+}
+.lg-text{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.sm-text{
+    font-size: 1.5rem;
+}
+#dynamic{
+    position: relative;
+    display: inline-block;
+}
+#dynamic::after{
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 4px;
+    height: 100%;
+    background-color: white;
+    display: block;
+    content: "";
+}
+#dynamic.active::after{
+    display: none;
+}
